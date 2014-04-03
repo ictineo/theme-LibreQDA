@@ -1,0 +1,80 @@
+/**
+ * Custom styles for LibreQDA theme
+ * Designed by Abel martin
+ * Implemented by Projecte Ictineo SCCL
+ *
+ * Copyleft 2014
+ */
+
+
+
+$morado: #b677b3;
+$morado_osc: #8e5e8a;
+
+$azul: #6fc1d2;
+$axul_osc: #428e9e;
+
+$amarillo: #dfbc42;
+$amarillo_osc: #a39033;
+$amarillo_dest: #ffffcc;
+
+$verde: #7dc692;
+$verde_os: #508b61;
+
+$rojo: #e65d5d;
+$rojo_osc: #c43433;
+
+$naranja: #d98e64;
+$naranja_osc: #b26b56;
+
+$gris_fondo: #f9f9f9;
+$gris_osc_fondo: #e8e8e8;
+$gris_barra_inf: #c6c6c6;
+$negro: #1b1f25;
+
+
+@mixin menu_botones {
+  font-family: "cabin";
+  color: #1b1f25;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+@mixin titulos {
+  font-family: "cabin";
+  color: #1b1f25;
+  text-align: left;
+  line-height: 1.3em;
+  font-size: 2.4em;
+}
+
+@mixin texto0 {
+  font-family: "cabin";
+  color: #1b1f25;
+  line-height: 1.4em;
+  font-size: 1.1em;
+}
+
+@mixin texto1 {
+  font-family: "cabin";
+  color: #1b1f25;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+
+@mixin texto2 {
+  font-family: "cabin";
+  color: #1b1f25;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  font-size: 0.9em;
+}
+
+@mixin texto3 {
+  font-family: "cabin";
+  color: #1b1f25;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  font-size: 0.7em;
+}
+
