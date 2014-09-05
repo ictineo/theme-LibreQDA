@@ -6,7 +6,11 @@
  * Copyleft 2014
  */
 
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic);
 
+$header_h: 28px;
+$content_width: 94%;
+$content_margin: 3%;
 
 $morado: #b677b3;
 $morado_osc: #8e5e8a;
@@ -34,14 +38,14 @@ $negro: #1b1f25;
 
 
 @mixin menu_botones {
-  font-family: "cabin";
+  font-family: "Cabin";
   color: #1b1f25;
   letter-spacing: 1px;
   font-size: 0.9em;
 }
 
 @mixin titulos {
-  font-family: "cabin";
+  font-family: "Cabin";
   color: #1b1f25;
   text-align: left;
   line-height: 1.3em;
@@ -49,21 +53,21 @@ $negro: #1b1f25;
 }
 
 @mixin texto0 {
-  font-family: "cabin";
+  font-family: "Cabin";
   color: #1b1f25;
   line-height: 1.4em;
   font-size: 1.1em;
 }
 
 @mixin texto1 {
-  font-family: "cabin";
+  font-family: "Cabin";
   color: #1b1f25;
   line-height: 1.4em;
   font-size: 1em;
 }
 
 @mixin texto2 {
-  font-family: "cabin";
+  font-family: "Cabin";
   color: #1b1f25;
   letter-spacing: 1px;
   line-height: 1.3em;
@@ -71,7 +75,7 @@ $negro: #1b1f25;
 }
 
 @mixin texto3 {
-  font-family: "cabin";
+  font-family: "Cabin";
   color: #1b1f25;
   letter-spacing: 1px;
   line-height: 1.5em;

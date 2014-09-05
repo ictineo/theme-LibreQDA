@@ -12,8 +12,8 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = lqda
-description = Read the <a href="https://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.
+name        = LibreQDA
+description = Apariencia grafica para LibreQDA, desarrollada por Projecte Ictineo SCCL i Abel Martin
 
 
 

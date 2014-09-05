@@ -1,0 +1,170 @@
+/**
+ * Custom styles for LibreQDA theme
+ * Designed by Abel martin
+ * Implemented by Projecte Ictineo SCCL
+ *
+ * Copyleft 2014
+ */
+
+/**
+ * Configs generals
+ */
+* {
+  font-family: 'Cabin';
+  /** label diu que es 16, pero 
+   * visualment queda calr que es 12*/
+  font-size: 12px;
+}
+a:hover,
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#page,
+.region-bottom {
+  width: $content_width;
+  margin: 0 $content_margin;
+}
+
+/**
+ * Elements comuns de pagines
+ */
+
+/** regio superiro **/
+#header {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: $negro;
+  height: $header_h;
+  z-index: 10;
+  a#logo {
+    line-height: $header_h;
+    text-align: middle;
+    position: fixed;
+    top: 0px;
+    left: $content_margin;
+    display: inline;
+    img {
+      width: 60px;
+      text-align: middle;
+      display: inline;
+    }
+  }
+  .region-header #block-system-main-menu {
+    h2 {display: none;}
+    ul {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      padding-left: 100px;
+      margin: 0px;
+      li {
+       display: inline;
+       margin: 0px 4px;
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          @include menu_botones();
+          color: white;
+        }
+      }
+    }
+  }
+  .region-header #block-locale-language {
+    h2 {display: none;}
+    ul {
+      &:before {
+        display: block;
+        position: fixed;
+        top: 0px;
+        height: $header_h;
+        content: " ";
+        width: 100%;
+        background-image: url('../images/idioma.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+      }
+      position: fixed;
+      right: 0;
+      padding-right: $content_margin;
+      top: 0px;
+      margin: $header_h 0 0 0;
+      padding: 8px;
+      background-color: $negro;
+      li {
+        list-style: none;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/**
+ * Home
+ */
+body.front { 
+  #block-views-carrousel-block {
+    margin-top: 3em;
+    @include zen-grid-item(6, 1);
+    .views-row {
+      .views-field-title {
+        @include zen-grid-item(3,1);
+        a {
+          @include titulos;
+        }
+      }
+      .views-field-field-imagencarrousel {
+        @include zen-grid-item(3, 4);
+      }
+    }
+  }
+  #block-views-home-libreqda-block {
+    @include zen-clear();
+    @include zen-grid-item(3, 1);
+    padding-right: 30px;
+    .view-content {
+      .views-field-title {
+        @include zen-grid-item(2, 1);
+        font-weight: 700;
+      }
+      .blog-post-body {
+        @include zen-grid-item(4, 3);
+      }
+      .footer-wrapper {
+        @include zen-clear();
+        @include zen-grid-item(6, 1);
+        @include zen-nested-container();
+        .footer-created {
+          @include zen-grid-item(2, 1);
+        }
+        .footer-link {
+          @include zen-grid-item(4, 3);
+          text-align: right;
+        }
+      }
+    }
+    .view-footer {
+      @include zen-clear();
+      @include zen-grid-item(3,1);
+      text-align: center;
+    }
+  }
+  #block-views-libreqda-forums-block {
+    @include zen-grid-item(3, 4);
+  }
+  #content {
+    .feed-icon,
+    article.node {
+      display: none;
+    }
+  }
+}
+/** carousel**/

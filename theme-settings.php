@@ -30,4 +30,38 @@ function lqda_form_system_theme_settings_alter(&$form, &$form_state, $form_id = 
   // */
 
   // We are editing the $form in place, so we don't need to return anything.
+  $form['lqda'] = array (
+    '#type' => 'fieldset',
+    '#title' => t('LibreQDA configuration'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+  );
+  for($i=1; $i<=6; $i++) {
+    $form['lqda']['home_block'.$i] = array (
+      '#type' => 'fieldset',
+      '#title' => t('Home block #'.$i),
+      '#collapsible' => TRUE,
+      '#collapsed' => TRUE,
+    );
+    $form['lqda']['home_block'.$i]['lqda_title_'.$i] = array (
+      '#type' => 'textfield',
+      '#title' => t('Title for home block '.$i),
+      '#default_value' => variable_get('lqda_title_'.$i, ''),
+    );
+    $form['lqda']['home_block'.$i]['lqda_desc_'.$i] = array (
+      '#type' => 'textfield',
+      '#title' => t('Description text for home block '.$i),
+      '#default_value' => variable_get('lqda_desc_'.$i, ''),
+    );
+    $form['lqda']['home_block'.$i]['lqda_link_'.$i] = array (
+      '#type' => 'textfield',
+      '#title' => t('Link text for home block '.$i),
+      '#default_value' => variable_get('lqda_link_'.$i, ''),
+    );
+    $form['lqda']['home_block'.$i]['lqda_img_'.$i] = array (
+      '#type' => 'managed_file',
+      '#title' => t('Image text for home block '.$i),
+      '#default_value' => variable_get('lqda_img_'.$i, ''),
+    );
+  }
 }
