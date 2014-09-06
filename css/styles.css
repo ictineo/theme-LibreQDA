@@ -1965,6 +1965,10 @@ body.front #lqda-buttons-region .lqda-front-button-6 .bottom-w {
 /* line 162, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block {
   clear: left;
+}
+/* line 166, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block,
+body.front #block-views-home-libreqda-block {
   float: left;
   width: 50%;
   margin-left: 0%;
@@ -1972,21 +1976,74 @@ body.front #block-views-home-libreqda-block {
   padding-right: 30px;
 }
 /* line 167, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block > h2,
+body.front #block-views-home-libreqda-block > h2 {
+  font-size: 32px;
+  width: 100%;
+  line-height: 150px;
+  vertical-align: middle;
+  padding-left: 150px;
+  background-image: url("../images/last_blog_entry.png");
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+}
+/* line 180, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .views-row,
+body.front #block-views-home-libreqda-block .view-content .views-row {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 185, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .views-field-title,
 body.front #block-views-home-libreqda-block .view-content .views-field-title {
   float: left;
   width: 33.33333%;
   margin-left: 0%;
   margin-right: -33.33333%;
-  font-weight: 700;
+  background-color: #b677b3;
+  height: 150px;
 }
-/* line 171, ../sass/_home.scss */
+/* line 189, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .views-field-title .field-content,
+body.front #block-views-home-libreqda-block .view-content .views-field-title .field-content {
+  font-weight: 700;
+  margin: 12px;
+  color: white;
+  display: block;
+}
+/* line 194, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .views-field-title .field-content a,
+body.front #block-views-home-libreqda-block .view-content .views-field-title .field-content a {
+  font-size: 16px;
+  line-height: 20px;
+}
+/* line 201, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .forum.post.body,
+body.front #block-views-libreqda-forums-block .view-content .blog-post-body,
+body.front #block-views-home-libreqda-block .view-content .forum.post.body,
 body.front #block-views-home-libreqda-block .view-content .blog-post-body {
   float: left;
   width: 66.66667%;
   margin-left: 33.33333%;
   margin-right: -100%;
+  background-color: white;
+  padding: 12px;
 }
-/* line 174, ../sass/_home.scss */
+/* line 205, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .forum.post.body span,
+body.front #block-views-libreqda-forums-block .view-content .blog-post-body span,
+body.front #block-views-home-libreqda-block .view-content .forum.post.body span,
+body.front #block-views-home-libreqda-block .view-content .blog-post-body span {
+  font-size: 14px;
+  line-height: 18px;
+}
+/* line 210, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .footer-wrapper,
 body.front #block-views-home-libreqda-block .view-content .footer-wrapper {
   clear: left;
   float: left;
@@ -1996,38 +2053,137 @@ body.front #block-views-home-libreqda-block .view-content .footer-wrapper {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 178, ../sass/_home.scss */
+/* line 214, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .footer-wrapper .footer-created,
 body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-created {
+  float: left;
+  width: 66.66667%;
+  margin-left: 0%;
+  margin-right: -66.66667%;
+  background-color: #575757;
+}
+/* line 218, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .footer-wrapper .footer-link,
+body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-link {
+  float: left;
+  width: 33.33333%;
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  text-align: right;
+  background-color: #1b1f25;
+}
+/* line 224, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .blog.post.date,
+body.front #block-views-home-libreqda-block .view-content .blog.post.date {
+  clear: left;
   float: left;
   width: 33.33333%;
   margin-left: 0%;
   margin-right: -33.33333%;
+  background-color: #575757;
 }
-/* line 181, ../sass/_home.scss */
-body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-link {
+/* line 231, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .footer-wrapper .footer-created,
+body.front #block-views-libreqda-forums-block .view-content .forum.post.author span a,
+body.front #block-views-libreqda-forums-block .view-content .blog.post.date span,
+body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-created,
+body.front #block-views-home-libreqda-block .view-content .forum.post.author span a,
+body.front #block-views-home-libreqda-block .view-content .blog.post.date span {
+  color: white;
+  font-size: 12px;
+  padding-left: 12px;
+}
+/* line 236, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .forum.post.author,
+body.front #block-views-home-libreqda-block .view-content .forum.post.author {
   float: left;
-  width: 66.66667%;
+  width: 33.33333%;
   margin-left: 33.33333%;
-  margin-right: -100%;
-  text-align: right;
+  margin-right: -66.66667%;
+  text-transform: uppercase;
+  background-color: #575757;
 }
-/* line 187, ../sass/_home.scss */
+/* line 241, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .readmore,
+body.front #block-views-home-libreqda-block .view-content .readmore {
+  float: left;
+  width: 33.33333%;
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  background-color: #1b1f25;
+}
+/* line 246, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .footer-wrapper .footer-link,
+body.front #block-views-libreqda-forums-block .view-content .readmore,
+body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-link,
+body.front #block-views-home-libreqda-block .view-content .readmore {
+  background-color: #1b1f25;
+  margin-bottom: 22px;
+  text-align: right;
+  border-radius: 2px;
+}
+/* line 251, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .footer-wrapper .footer-link a,
+body.front #block-views-libreqda-forums-block .view-content .readmore a,
+body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-link a,
+body.front #block-views-home-libreqda-block .view-content .readmore a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  padding-right: 18px;
+  padding-left: 40px;
+  background-image: url("../images/ver.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+/* line 263, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-footer,
 body.front #block-views-home-libreqda-block .view-footer {
   clear: left;
   float: left;
-  width: 50%;
+  width: 100%;
   margin-left: 0%;
-  margin-right: -50%;
+  margin-right: -100%;
+  background-color: #b677b3;
+  border-width: 0 1px 2px 0;
+  border-color: #8e5e8a;
+  border-style: solid;
+  text-align: center;
+  border-radius: 2px;
+  padding-right: 12px;
   text-align: center;
 }
-/* line 193, ../sass/_home.scss */
+/* line 274, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-footer a,
+body.front #block-views-home-libreqda-block .view-footer a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+/* line 282, ../sass/_home.scss */
 body.front #block-views-libreqda-forums-block {
   float: left;
   width: 50%;
   margin-left: 50%;
   margin-right: -100%;
+  padding-right: 0px;
 }
-/* line 198, ../sass/_home.scss */
+/* line 283, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block > h2 {
+  background-image: url("../images/last_forum_entry.png");
+}
+/* line 288, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-content .views-field-title {
+  background-color: #7dc692;
+}
+/* line 291, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block .view-footer {
+  border-color: #508b61;
+  background-color: #7dc692;
+  padding-right: 0;
+}
+/* line 299, ../sass/_home.scss */
 body.front #content .feed-icon,
 body.front #content article.node {
   display: none;

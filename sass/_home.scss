@@ -161,37 +161,138 @@ body.front {
   }
   #block-views-home-libreqda-block {
     @include zen-clear();
+  }
+  #block-views-libreqda-forums-block,
+  #block-views-home-libreqda-block {
+    & > h2 {
+      font-size: 32px;
+      width: 100%;
+      line-height: 150px;
+      vertical-align: middle;
+      padding-left: 150px;
+      background-image: url('../images/last_blog_entry.png');
+      background-position: 0 50%;
+      background-repeat: no-repeat;
+    }
     @include zen-grid-item(3, 1);
     padding-right: 30px;
     .view-content {
+      .views-row {
+        @include zen-clear();
+        @include zen-grid-item(6, 1);
+        @include zen-nested-container();
+      }
       .views-field-title {
         @include zen-grid-item(2, 1);
-        font-weight: 700;
+        background-color: $morado;
+        height: 150px;
+        .field-content {
+          font-weight: 700;
+          margin: 12px;
+          color: white;
+          display: block;
+          a {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
       }
+      .forum.post.body,
       .blog-post-body {
         @include zen-grid-item(4, 3);
+        background-color: white;
+        padding: 12px;
+        span {
+          font-size: 14px;
+          line-height: 18px;
+        }
       }
       .footer-wrapper {
         @include zen-clear();
         @include zen-grid-item(6, 1);
         @include zen-nested-container();
         .footer-created {
-          @include zen-grid-item(2, 1);
+          @include zen-grid-item(4, 1);
+          background-color: $gris_aux1;
         }
         .footer-link {
-          @include zen-grid-item(4, 3);
+          @include zen-grid-item(2, 5);
           text-align: right;
+          background-color: $negro;
+        }
+      }
+      .blog.post.date {
+        @include zen-clear();
+        @include zen-grid-item(2, 1);
+        background-color: $gris_aux1;
+      }
+      .footer-wrapper .footer-created,
+      .forum.post.author span a,
+      .blog.post.date span {
+        color: white;
+        font-size: 12px;
+        padding-left: 12px;
+      }
+      .forum.post.author {
+        @include zen-grid-item(2, 3);
+        text-transform: uppercase;
+        background-color: $gris_aux1;
+      }
+      .readmore {
+        @include zen-grid-item(2, 5);
+        background-color: $negro;
+      }
+      .footer-wrapper .footer-link,
+      .readmore {
+        background-color: $negro;
+        margin-bottom: 22px;
+        text-align: right;
+        border-radius: 2px;
+        a {
+          text-transform: uppercase;
+          color: white;
+          font-weight: 900;
+          padding-right: 18px;
+          padding-left: 40px;
+          background-image: url('../images/ver.svg');
+          background-repeat: no-repeat;
+          background-position: 0 50%;
         }
       }
     }
     .view-footer {
       @include zen-clear();
-      @include zen-grid-item(3,1);
+      @include zen-grid-item(6,1);
+      background-color: $morado;
+      border-width: 0 1px 2px 0;
+      border-color: $morado_osc;
+      border-style: solid;
       text-align: center;
+      border-radius: 2px;
+      padding-right: 12px;
+      text-align: center;
+      a {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
     }
   }
   #block-views-libreqda-forums-block {
+    & > h2 {
+      background-image: url('../images/last_forum_entry.png');
+    }
     @include zen-grid-item(3, 4);
+    padding-right: 0px;
+    .view-content .views-field-title {
+      background-color: $verde;
+    }
+    .view-footer {
+      border-color: $verde_os;
+      background-color: $verde;
+      padding-right: 0;
+    }
   }
   #content {
     .feed-icon,
