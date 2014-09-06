@@ -67,6 +67,33 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+      <?php print render($page['top_front_content']); ?>
+      <?php /* create custom butons from theme config */
+        $buttons_region = '';
+        for ($i = 1; $i <= 6; $i++):
+          $title = theme_get_setting('home_block_lqda_title_' . $i);
+          $desc  = theme_get_setting('home_block_lqda_desc_' . $i);
+          $link  = theme_get_setting('home_block_lqda_link_' . $i);
+          $img   = theme_get_setting('home_block_lqda_img_' . $i);
+          $set_button = $title && $desc && $link && $img;
+          if ($set_button):
+            $buttons_region .= '<a href="' . $link . '" class="lqda-front-button lqda-front-button-' . $i . '">';
+            $buttons_region .= '  <div class="top-w">';
+            $buttons_region .= '    <div class="img-w"><img src="' . $img . '"/></div>';
+            $buttons_region .= '    <h4 class="title">' . $title . '</h4>';
+            $buttons_region .= '  </div><div class="bottom-w">';
+            $buttons_region .= '    <div class="desc-w">' . $desc . '</div>';
+            $buttons_region .= '  </div>';
+            $buttons_region .= '</a>';
+          endif;
+        endfor;
+        if ($buttons_region != ''):
+          $buttons_region = '<div id="lqda-buttons-region">' . $buttons_region . '</div>';
+          print $buttons_region;
+        endif;
+        dsm($page);
+
+      ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
