@@ -68,7 +68,14 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['top_front_content']); ?>
+      <?php /* insert pc image with javascript tigerd in coustom js file */
+        $img_pc = file_create_url(file_load(theme_get_setting('lqda_home_pc_img'))->uri);
+        if($img_pc):
+          print ('<div id="lqda-pc"><img src="' . $img_pc . '"/></div>');
+        endif;
+      ?>
       <?php /* create custom butons from theme config */
+
         $buttons_region = '';
         for ($i = 1; $i <= 6; $i++):
           $title = theme_get_setting('home_block_lqda_title_' . $i);

@@ -21,6 +21,14 @@ function lqda_form_system_theme_settings_alter(&$form, &$form_state, $form_id = 
     '#collapsible' => TRUE,
     '#collapsed' => TRUE,
   );
+  $form['lqda']['lqda_home_pc_img'] = array(
+    '#type' => 'managed_file',
+    '#title' => 'Home PC image',
+    '#default_value' => theme_get_setting('lqda_home_pc_img'),
+    '#upload_validators' => array(
+      'file_validate_extensions' => array('gif png jpg jpeg svg'),
+    ),
+  );
   for ($i = 1; $i <= 6; $i++) {
     $form['lqda']['home_block' . $i] = array(
       '#type' => 'fieldset',
