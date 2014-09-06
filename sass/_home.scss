@@ -1,6 +1,6 @@
-
 /**
- * Home
+ * Home theaming
+ * mixed structure and apparence
  */
 body.front {
   #block-views-carrousel-block {
@@ -17,6 +17,41 @@ body.front {
         @include zen-grid-item(3, 4);
       }
     }
+  }
+  #lqda-buttons-region {
+    @include zen-clear();
+    @include zen-grid-item(6, 1);
+    @include zen-grid-container();
+    .lqda-front-button {
+      // generic stile for front buttons
+    }
+    // specific stiles for each button
+    .lqda-front-button-1 {
+      background-color: pink;
+      @include zen-grid-item(1, 1);
+    }
+    .lqda-front-button-2 {
+      background-color: pink;
+      @include zen-grid-item(1, 2);
+    }
+    .lqda-front-button-3 {
+      background-color: pink;
+      @include zen-grid-item(1, 3);
+    }
+    .lqda-front-button-4 {
+      background-color: pink;
+      @include zen-grid-item(1, 4);
+    }
+    .lqda-front-button-5 {
+      background-color: pink;
+      @include zen-grid-item(1, 5);
+    }
+    .lqda-front-button-6 {
+      background-color: pink;
+      @include zen-grid-item(1, 6);
+    }
+      
+
   }
   #block-views-home-libreqda-block {
     @include zen-clear();
