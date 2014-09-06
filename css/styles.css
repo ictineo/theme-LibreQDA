@@ -1791,6 +1791,7 @@ body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row 
 }
 /* line 51, ../sass/_home.scss */
 body.front #lqda-buttons-region {
+  background-color: #e8e8e8;
   clear: left;
   float: left;
   width: 100%;
@@ -1806,55 +1807,130 @@ body.front #lqda-buttons-region:before, body.front #lqda-buttons-region:after {
 body.front #lqda-buttons-region:after {
   clear: both;
 }
-/* line 59, ../sass/_home.scss */
+/* line 58, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button {
+  text-align: center;
+  color: white;
+}
+/* line 62, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button > div {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 66, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button .top-w {
+  padding-top: 18px;
+}
+/* line 69, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button h4 {
+  text-transform: uppercase;
+  margin: 0px;
+  font-size: 18px;
+  padding-bottom: 8px;
+  padding-top: 12px;
+}
+/* line 76, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button .bottom-w {
+  padding: 12px 0 18px 0;
+}
+/* line 79, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button .bottom-w .desc-w {
+  margin: 0px 18px;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 16px;
+}
+/* line 87, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-1 {
-  background-color: pink;
   float: left;
   width: 16.66667%;
   margin-left: 0%;
   margin-right: -16.66667%;
 }
-/* line 63, ../sass/_home.scss */
+/* line 89, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-1 > div {
+  background-color: #b677b3;
+}
+/* line 92, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-1 .bottom-w {
+  background-color: #8e5e8a;
+}
+/* line 96, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-2 {
-  background-color: pink;
   float: left;
   width: 16.66667%;
   margin-left: 16.66667%;
   margin-right: -33.33333%;
 }
-/* line 67, ../sass/_home.scss */
+/* line 98, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-2 > div {
+  background-color: #6fc1d2;
+}
+/* line 101, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-2 .bottom-w {
+  background-color: #428e9e;
+}
+/* line 105, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-3 {
-  background-color: pink;
   float: left;
   width: 16.66667%;
   margin-left: 33.33333%;
   margin-right: -50%;
 }
-/* line 71, ../sass/_home.scss */
+/* line 107, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-3 > div {
+  background-color: #dfbc42;
+}
+/* line 110, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-3 .bottom-w {
+  background-color: #a39033;
+}
+/* line 114, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-4 {
-  background-color: pink;
   float: left;
   width: 16.66667%;
   margin-left: 50%;
   margin-right: -66.66667%;
 }
-/* line 75, ../sass/_home.scss */
+/* line 116, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-4 > div {
+  background-color: #7dc692;
+}
+/* line 119, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-4 .bottom-w {
+  background-color: #508b61;
+}
+/* line 123, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-5 {
-  background-color: pink;
   float: left;
   width: 16.66667%;
   margin-left: 66.66667%;
   margin-right: -83.33333%;
 }
-/* line 79, ../sass/_home.scss */
+/* line 125, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-5 > div {
+  background-color: #e65d5d;
+}
+/* line 128, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-5 .bottom-w {
+  background-color: #c43433;
+}
+/* line 132, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-6 {
-  background-color: pink;
   float: left;
   width: 16.66667%;
   margin-left: 83.33333%;
   margin-right: -100%;
 }
-/* line 86, ../sass/_home.scss */
+/* line 134, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-6 > div {
+  background-color: #d98e64;
+}
+/* line 137, ../sass/_home.scss */
+body.front #lqda-buttons-region .lqda-front-button-6 .bottom-w {
+  background-color: #b26b56;
+}
+/* line 144, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block {
   clear: left;
   float: left;
@@ -1863,7 +1939,7 @@ body.front #block-views-home-libreqda-block {
   margin-right: -50%;
   padding-right: 30px;
 }
-/* line 91, ../sass/_home.scss */
+/* line 149, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .views-field-title {
   float: left;
   width: 33.33333%;
@@ -1871,14 +1947,14 @@ body.front #block-views-home-libreqda-block .view-content .views-field-title {
   margin-right: -33.33333%;
   font-weight: 700;
 }
-/* line 95, ../sass/_home.scss */
+/* line 153, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .blog-post-body {
   float: left;
   width: 66.66667%;
   margin-left: 33.33333%;
   margin-right: -100%;
 }
-/* line 98, ../sass/_home.scss */
+/* line 156, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .footer-wrapper {
   clear: left;
   float: left;
@@ -1888,14 +1964,14 @@ body.front #block-views-home-libreqda-block .view-content .footer-wrapper {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 102, ../sass/_home.scss */
+/* line 160, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-created {
   float: left;
   width: 33.33333%;
   margin-left: 0%;
   margin-right: -33.33333%;
 }
-/* line 105, ../sass/_home.scss */
+/* line 163, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-link {
   float: left;
   width: 66.66667%;
@@ -1903,7 +1979,7 @@ body.front #block-views-home-libreqda-block .view-content .footer-wrapper .foote
   margin-right: -100%;
   text-align: right;
 }
-/* line 111, ../sass/_home.scss */
+/* line 169, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-footer {
   clear: left;
   float: left;
@@ -1912,14 +1988,14 @@ body.front #block-views-home-libreqda-block .view-footer {
   margin-right: -50%;
   text-align: center;
 }
-/* line 117, ../sass/_home.scss */
+/* line 175, ../sass/_home.scss */
 body.front #block-views-libreqda-forums-block {
   float: left;
   width: 50%;
   margin-left: 50%;
   margin-right: -100%;
 }
-/* line 122, ../sass/_home.scss */
+/* line 180, ../sass/_home.scss */
 body.front #content .feed-icon,
 body.front #content article.node {
   display: none;

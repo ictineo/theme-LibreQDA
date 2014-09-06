@@ -49,36 +49,94 @@ body.front {
     }
   }
   #lqda-buttons-region {
+    background-color: $gris_osc_fondo;
     @include zen-clear();
     @include zen-grid-item(6, 1);
+    $zen-gutter-width:  60px;
+    $zen-gutter-method: padding;
     @include zen-grid-container();
     .lqda-front-button {
       // generic stile for front buttons
+      text-align: center;
+      color: white;
+      & > div {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .top-w {
+        padding-top: 18px;
+      }
+      h4 {
+        text-transform: uppercase;
+        margin: 0px;
+        font-size: 18px;
+        padding-bottom: 8px;
+        padding-top: 12px;
+      }
+      .bottom-w {
+        padding: 12px 0 18px 0;
+      }
+      .bottom-w .desc-w{
+        margin: 0px 18px;
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 16px;
+      }
     }
     // specific stiles for each button
     .lqda-front-button-1 {
-      background-color: pink;
       @include zen-grid-item(1, 1);
+      & > div {
+        background-color: $morado;
+      }
+      .bottom-w {
+        background-color: $morado_osc;
+      }
     }
     .lqda-front-button-2 {
-      background-color: pink;
       @include zen-grid-item(1, 2);
+      & > div {
+        background-color: $azul;
+      }
+      .bottom-w {
+        background-color: $axul_osc;
+      }
     }
     .lqda-front-button-3 {
-      background-color: pink;
       @include zen-grid-item(1, 3);
+      & > div {
+        background-color: $amarillo;
+      }
+      .bottom-w {
+        background-color: $amarillo_osc;
+      }
     }
     .lqda-front-button-4 {
-      background-color: pink;
       @include zen-grid-item(1, 4);
+      & > div {
+        background-color: $verde;
+      }
+      .bottom-w {
+        background-color: $verde_os;
+      }
     }
     .lqda-front-button-5 {
-      background-color: pink;
       @include zen-grid-item(1, 5);
+      & > div {
+        background-color: $rojo;
+      }
+      .bottom-w {
+        background-color: $rojo_osc;
+      }
     }
     .lqda-front-button-6 {
-      background-color: pink;
       @include zen-grid-item(1, 6);
+      & > div { 
+        background-color: $naranja;
+      }
+      .bottom-w {
+        background-color: $naranja_osc;
+      }
     }
       
 
