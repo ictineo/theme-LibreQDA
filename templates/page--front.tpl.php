@@ -91,7 +91,6 @@
           $buttons_region = '<div id="lqda-buttons-region">' . $buttons_region . '</div>';
           print $buttons_region;
         endif;
-        dsm($page);
 
       ?>
       <?php print render($page['content']); ?>

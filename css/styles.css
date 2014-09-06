@@ -1712,6 +1712,111 @@ tr.selected td {
  * Copyleft 2014
  */
 /**
+ * Home
+ */
+/* line 6, ../sass/_home.scss */
+body.front #block-views-carrousel-block {
+  margin-top: 3em;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+}
+/* line 10, ../sass/_home.scss */
+body.front #block-views-carrousel-block .views-row .views-field-title {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+}
+/* line 12, ../sass/_home.scss */
+body.front #block-views-carrousel-block .views-row .views-field-title a {
+  font-family: "Cabin";
+  color: #1b1f25;
+  text-align: left;
+  line-height: 1.3em;
+  font-size: 2.4em;
+}
+/* line 16, ../sass/_home.scss */
+body.front #block-views-carrousel-block .views-row .views-field-field-imagencarrousel {
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+}
+/* line 21, ../sass/_home.scss */
+body.front #block-views-home-libreqda-block {
+  clear: left;
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-right: 30px;
+}
+/* line 26, ../sass/_home.scss */
+body.front #block-views-home-libreqda-block .view-content .views-field-title {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  font-weight: 700;
+}
+/* line 30, ../sass/_home.scss */
+body.front #block-views-home-libreqda-block .view-content .blog-post-body {
+  float: left;
+  width: 66.66667%;
+  margin-left: 33.33333%;
+  margin-right: -100%;
+}
+/* line 33, ../sass/_home.scss */
+body.front #block-views-home-libreqda-block .view-content .footer-wrapper {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 37, ../sass/_home.scss */
+body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-created {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+}
+/* line 40, ../sass/_home.scss */
+body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-link {
+  float: left;
+  width: 66.66667%;
+  margin-left: 33.33333%;
+  margin-right: -100%;
+  text-align: right;
+}
+/* line 46, ../sass/_home.scss */
+body.front #block-views-home-libreqda-block .view-footer {
+  clear: left;
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  text-align: center;
+}
+/* line 52, ../sass/_home.scss */
+body.front #block-views-libreqda-forums-block {
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+}
+/* line 57, ../sass/_home.scss */
+body.front #content .feed-icon,
+body.front #content article.node {
+  display: none;
+}
+
+/** carousel**/
+/**
  * Custom styles for LibreQDA theme
  * Designed by Abel martin
  * Implemented by Projecte Ictineo SCCL
@@ -1834,111 +1939,6 @@ a {
   color: white;
 }
 
-/**
- * Home
- */
-/* line 114, ../sass/_lqda.scss */
-body.front #block-views-carrousel-block {
-  margin-top: 3em;
-  float: left;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: -100%;
-}
-/* line 118, ../sass/_lqda.scss */
-body.front #block-views-carrousel-block .views-row .views-field-title {
-  float: left;
-  width: 50%;
-  margin-left: 0%;
-  margin-right: -50%;
-}
-/* line 120, ../sass/_lqda.scss */
-body.front #block-views-carrousel-block .views-row .views-field-title a {
-  font-family: "Cabin";
-  color: #1b1f25;
-  text-align: left;
-  line-height: 1.3em;
-  font-size: 2.4em;
-}
-/* line 124, ../sass/_lqda.scss */
-body.front #block-views-carrousel-block .views-row .views-field-field-imagencarrousel {
-  float: left;
-  width: 50%;
-  margin-left: 50%;
-  margin-right: -100%;
-}
-/* line 129, ../sass/_lqda.scss */
-body.front #block-views-home-libreqda-block {
-  clear: left;
-  float: left;
-  width: 50%;
-  margin-left: 0%;
-  margin-right: -50%;
-  padding-right: 30px;
-}
-/* line 134, ../sass/_lqda.scss */
-body.front #block-views-home-libreqda-block .view-content .views-field-title {
-  float: left;
-  width: 33.33333%;
-  margin-left: 0%;
-  margin-right: -33.33333%;
-  font-weight: 700;
-}
-/* line 138, ../sass/_lqda.scss */
-body.front #block-views-home-libreqda-block .view-content .blog-post-body {
-  float: left;
-  width: 66.66667%;
-  margin-left: 33.33333%;
-  margin-right: -100%;
-}
-/* line 141, ../sass/_lqda.scss */
-body.front #block-views-home-libreqda-block .view-content .footer-wrapper {
-  clear: left;
-  float: left;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: -100%;
-  padding-left: 0;
-  padding-right: 0;
-}
-/* line 145, ../sass/_lqda.scss */
-body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-created {
-  float: left;
-  width: 33.33333%;
-  margin-left: 0%;
-  margin-right: -33.33333%;
-}
-/* line 148, ../sass/_lqda.scss */
-body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-link {
-  float: left;
-  width: 66.66667%;
-  margin-left: 33.33333%;
-  margin-right: -100%;
-  text-align: right;
-}
-/* line 154, ../sass/_lqda.scss */
-body.front #block-views-home-libreqda-block .view-footer {
-  clear: left;
-  float: left;
-  width: 50%;
-  margin-left: 0%;
-  margin-right: -50%;
-  text-align: center;
-}
-/* line 160, ../sass/_lqda.scss */
-body.front #block-views-libreqda-forums-block {
-  float: left;
-  width: 50%;
-  margin-left: 50%;
-  margin-right: -100%;
-}
-/* line 165, ../sass/_lqda.scss */
-body.front #content .feed-icon,
-body.front #content article.node {
-  display: none;
-}
-
-/** carousel**/
 /**
  * @file
  * Print styling
