@@ -24,7 +24,8 @@ a {
 #page,
 .region-bottom {
   width: $content_width;
-  margin: 0 $content_margin;
+  //margin: 0 $content_margin;
+  margin: 0 auto;
 }
 
 /**

@@ -1712,7 +1712,8 @@ tr.selected td {
  * Copyleft 2014
  */
 /**
- * Home
+ * Home theaming
+ * mixed structure and apparence
  */
 /* line 6, ../sass/_home.scss */
 body.front #block-views-carrousel-block {
@@ -1722,29 +1723,73 @@ body.front #block-views-carrousel-block {
   margin-left: 0%;
   margin-right: -100%;
 }
-/* line 10, ../sass/_home.scss */
-body.front #block-views-carrousel-block .views-row .views-field-title {
+/* line 9, ../sass/_home.scss */
+body.front #block-views-carrousel-block .views_slideshow_cycle_slide {
+  width: 100%;
+}
+/* line 11, ../sass/_home.scss */
+body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row {
+  width: 100%;
+}
+/* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row:before, body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row:after {
+  clear: both;
+}
+/* line 14, ../sass/_home.scss */
+body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row .views-field-field-texto {
   float: left;
   width: 50%;
   margin-left: 0%;
   margin-right: -50%;
 }
-/* line 12, ../sass/_home.scss */
-body.front #block-views-carrousel-block .views-row .views-field-title a {
+/* line 17, ../sass/_home.scss */
+body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row .views-field-field-texto .field-content span,
+body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row .views-field-field-texto .field-content p {
   font-family: "Cabin";
   color: #1b1f25;
-  text-align: left;
-  line-height: 1.3em;
-  font-size: 2.4em;
+  line-height: 1.4em;
+  font-size: 1.1em;
+  font-size: 28px;
+  line-height: 36px;
 }
-/* line 16, ../sass/_home.scss */
-body.front #block-views-carrousel-block .views-row .views-field-field-imagencarrousel {
+/* line 22, ../sass/_home.scss */
+body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row .views-field-field-texto .lqdaButton {
+  font-family: "Cabin";
+  color: #1b1f25;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  padding: 0px 18px;
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #dfbc42;
+  font-weight: 600;
+  color: white;
+  border-bottom: 2px solid #1b1f25;
+  line-height: 30px;
+}
+/* line 39, ../sass/_home.scss */
+body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row .views-field-field-texto .lqdaDemo {
+  margin-left: 12px;
+  background-color: #428e9e;
+}
+/* line 45, ../sass/_home.scss */
+body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row .views-field-field-imagencarrousel {
   float: left;
   width: 50%;
   margin-left: 50%;
   margin-right: -100%;
 }
-/* line 21, ../sass/_home.scss */
+/* line 51, ../sass/_home.scss */
 body.front #lqda-buttons-region {
   clear: left;
   float: left;
@@ -1761,7 +1806,7 @@ body.front #lqda-buttons-region:before, body.front #lqda-buttons-region:after {
 body.front #lqda-buttons-region:after {
   clear: both;
 }
-/* line 29, ../sass/_home.scss */
+/* line 59, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-1 {
   background-color: pink;
   float: left;
@@ -1769,7 +1814,7 @@ body.front #lqda-buttons-region .lqda-front-button-1 {
   margin-left: 0%;
   margin-right: -16.66667%;
 }
-/* line 33, ../sass/_home.scss */
+/* line 63, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-2 {
   background-color: pink;
   float: left;
@@ -1777,7 +1822,7 @@ body.front #lqda-buttons-region .lqda-front-button-2 {
   margin-left: 16.66667%;
   margin-right: -33.33333%;
 }
-/* line 37, ../sass/_home.scss */
+/* line 67, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-3 {
   background-color: pink;
   float: left;
@@ -1785,7 +1830,7 @@ body.front #lqda-buttons-region .lqda-front-button-3 {
   margin-left: 33.33333%;
   margin-right: -50%;
 }
-/* line 41, ../sass/_home.scss */
+/* line 71, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-4 {
   background-color: pink;
   float: left;
@@ -1793,7 +1838,7 @@ body.front #lqda-buttons-region .lqda-front-button-4 {
   margin-left: 50%;
   margin-right: -66.66667%;
 }
-/* line 45, ../sass/_home.scss */
+/* line 75, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-5 {
   background-color: pink;
   float: left;
@@ -1801,7 +1846,7 @@ body.front #lqda-buttons-region .lqda-front-button-5 {
   margin-left: 66.66667%;
   margin-right: -83.33333%;
 }
-/* line 49, ../sass/_home.scss */
+/* line 79, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-6 {
   background-color: pink;
   float: left;
@@ -1809,7 +1854,7 @@ body.front #lqda-buttons-region .lqda-front-button-6 {
   margin-left: 83.33333%;
   margin-right: -100%;
 }
-/* line 56, ../sass/_home.scss */
+/* line 86, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block {
   clear: left;
   float: left;
@@ -1818,7 +1863,7 @@ body.front #block-views-home-libreqda-block {
   margin-right: -50%;
   padding-right: 30px;
 }
-/* line 61, ../sass/_home.scss */
+/* line 91, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .views-field-title {
   float: left;
   width: 33.33333%;
@@ -1826,14 +1871,14 @@ body.front #block-views-home-libreqda-block .view-content .views-field-title {
   margin-right: -33.33333%;
   font-weight: 700;
 }
-/* line 65, ../sass/_home.scss */
+/* line 95, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .blog-post-body {
   float: left;
   width: 66.66667%;
   margin-left: 33.33333%;
   margin-right: -100%;
 }
-/* line 68, ../sass/_home.scss */
+/* line 98, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .footer-wrapper {
   clear: left;
   float: left;
@@ -1843,14 +1888,14 @@ body.front #block-views-home-libreqda-block .view-content .footer-wrapper {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 72, ../sass/_home.scss */
+/* line 102, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-created {
   float: left;
   width: 33.33333%;
   margin-left: 0%;
   margin-right: -33.33333%;
 }
-/* line 75, ../sass/_home.scss */
+/* line 105, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-link {
   float: left;
   width: 66.66667%;
@@ -1858,7 +1903,7 @@ body.front #block-views-home-libreqda-block .view-content .footer-wrapper .foote
   margin-right: -100%;
   text-align: right;
 }
-/* line 81, ../sass/_home.scss */
+/* line 111, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-footer {
   clear: left;
   float: left;
@@ -1867,14 +1912,14 @@ body.front #block-views-home-libreqda-block .view-footer {
   margin-right: -50%;
   text-align: center;
 }
-/* line 87, ../sass/_home.scss */
+/* line 117, ../sass/_home.scss */
 body.front #block-views-libreqda-forums-block {
   float: left;
   width: 50%;
   margin-left: 50%;
   margin-right: -100%;
 }
-/* line 92, ../sass/_home.scss */
+/* line 122, ../sass/_home.scss */
 body.front #content .feed-icon,
 body.front #content article.node {
   display: none;
@@ -1910,14 +1955,14 @@ a {
 #page,
 .region-bottom {
   width: 94%;
-  margin: 0 3%;
+  margin: 0 auto;
 }
 
 /**
  * Elements comuns de pagines
  */
 /** regio superiro **/
-/* line 35, ../sass/_lqda.scss */
+/* line 36, ../sass/_lqda.scss */
 #header {
   position: fixed;
   top: 0px;
@@ -1927,7 +1972,7 @@ a {
   height: 28px;
   z-index: 10;
 }
-/* line 43, ../sass/_lqda.scss */
+/* line 44, ../sass/_lqda.scss */
 #header a#logo {
   line-height: 28px;
   text-align: middle;
@@ -1936,17 +1981,17 @@ a {
   left: 3%;
   display: inline;
 }
-/* line 50, ../sass/_lqda.scss */
+/* line 51, ../sass/_lqda.scss */
 #header a#logo img {
   width: 60px;
   text-align: middle;
   display: inline;
 }
-/* line 57, ../sass/_lqda.scss */
+/* line 58, ../sass/_lqda.scss */
 #header .region-header #block-system-main-menu h2 {
   display: none;
 }
-/* line 58, ../sass/_lqda.scss */
+/* line 59, ../sass/_lqda.scss */
 #header .region-header #block-system-main-menu ul {
   position: fixed;
   top: 0px;
@@ -1954,12 +1999,12 @@ a {
   padding-left: 100px;
   margin: 0px;
 }
-/* line 64, ../sass/_lqda.scss */
+/* line 65, ../sass/_lqda.scss */
 #header .region-header #block-system-main-menu ul li {
   display: inline;
   margin: 0px 4px;
 }
-/* line 67, ../sass/_lqda.scss */
+/* line 68, ../sass/_lqda.scss */
 #header .region-header #block-system-main-menu ul li a {
   text-transform: uppercase;
   text-decoration: none;
@@ -1969,11 +2014,11 @@ a {
   font-size: 0.9em;
   color: white;
 }
-/* line 77, ../sass/_lqda.scss */
+/* line 78, ../sass/_lqda.scss */
 #header .region-header #block-locale-language h2 {
   display: none;
 }
-/* line 78, ../sass/_lqda.scss */
+/* line 79, ../sass/_lqda.scss */
 #header .region-header #block-locale-language ul {
   position: fixed;
   right: 0;
@@ -1983,7 +2028,7 @@ a {
   padding: 8px;
   background-color: #1b1f25;
 }
-/* line 79, ../sass/_lqda.scss */
+/* line 80, ../sass/_lqda.scss */
 #header .region-header #block-locale-language ul:before {
   display: block;
   position: fixed;
@@ -1995,11 +2040,11 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
-/* line 97, ../sass/_lqda.scss */
+/* line 98, ../sass/_lqda.scss */
 #header .region-header #block-locale-language ul li {
   list-style: none;
 }
-/* line 99, ../sass/_lqda.scss */
+/* line 100, ../sass/_lqda.scss */
 #header .region-header #block-locale-language ul li a {
   color: white;
 }

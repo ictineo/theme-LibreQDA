@@ -6,15 +6,45 @@ body.front {
   #block-views-carrousel-block {
     margin-top: 3em;
     @include zen-grid-item(6, 1);
-    .views-row {
-      .views-field-title {
-        @include zen-grid-item(3,1);
-        a {
-          @include titulos;
+    .views_slideshow_cycle_slide {
+      width: 100%;
+      .views-row {
+        width: 100%;
+        @include zen-grid-container();
+        .views-field-field-texto {
+          @include zen-grid-item(3,1);
+          .field-content span,
+          .field-content p {
+            @include texto0;
+            font-size: 28px;
+            line-height: 36px;
+          }
+          .lqdaButton {
+            @include menu_botones;
+            padding: 0px 18px;
+            display: inline-block;
+            min-width: 100px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: $amarillo;
+            font-weight: 600;
+            color: white;
+            border-bottom: 2px solid $negro;
+            line-height: 30px;
+          }
+
+          .lqdaDemo {
+            margin-left: 12px;
+            background-color: $axul_osc;
+          }
+
         }
-      }
-      .views-field-field-imagencarrousel {
-        @include zen-grid-item(3, 4);
+        .views-field-field-imagencarrousel {
+          @include zen-grid-item(3, 4);
+        }
       }
     }
   }
