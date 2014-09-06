@@ -48,8 +48,26 @@ body.front {
       }
     }
   }
+  #lqda-pc {
+    background-color: $gris_osc_fondo;
+    height: 130px;
+    @include zen-clear();
+    @include zen-grid-item(6, 1);
+    $zen-gutter-width:  60px;
+    $zen-gutter-method: padding;
+    @include zen-grid-container();
+    img {
+      @include zen-grid-item(2,3);
+      margin-top: -130px;
+      position: relative;
+      z-index: 10;
+      cursor: pointer;
+    }
+  }
   #lqda-buttons-region {
     background-color: $gris_osc_fondo;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
     @include zen-clear();
     @include zen-grid-item(6, 1);
     $zen-gutter-width:  60px;

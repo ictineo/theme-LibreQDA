@@ -1790,8 +1790,40 @@ body.front #block-views-carrousel-block .views_slideshow_cycle_slide .views-row 
   margin-right: -100%;
 }
 /* line 51, ../sass/_home.scss */
+body.front #lqda-pc {
+  background-color: #e8e8e8;
+  height: 130px;
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+}
+/* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+body.front #lqda-pc:before, body.front #lqda-pc:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+body.front #lqda-pc:after {
+  clear: both;
+}
+/* line 59, ../sass/_home.scss */
+body.front #lqda-pc img {
+  float: left;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-right: -66.66667%;
+  margin-top: -130px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+/* line 67, ../sass/_home.scss */
 body.front #lqda-buttons-region {
   background-color: #e8e8e8;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
   clear: left;
   float: left;
   width: 100%;
@@ -1807,21 +1839,21 @@ body.front #lqda-buttons-region:before, body.front #lqda-buttons-region:after {
 body.front #lqda-buttons-region:after {
   clear: both;
 }
-/* line 58, ../sass/_home.scss */
+/* line 76, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button {
   text-align: center;
   color: white;
 }
-/* line 62, ../sass/_home.scss */
+/* line 80, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button > div {
   width: 90%;
   margin: 0 auto;
 }
-/* line 66, ../sass/_home.scss */
+/* line 84, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button .top-w {
   padding-top: 18px;
 }
-/* line 69, ../sass/_home.scss */
+/* line 87, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button h4 {
   text-transform: uppercase;
   margin: 0px;
@@ -1829,108 +1861,108 @@ body.front #lqda-buttons-region .lqda-front-button h4 {
   padding-bottom: 8px;
   padding-top: 12px;
 }
-/* line 76, ../sass/_home.scss */
+/* line 94, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button .bottom-w {
   padding: 12px 0 18px 0;
 }
-/* line 79, ../sass/_home.scss */
+/* line 97, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button .bottom-w .desc-w {
   margin: 0px 18px;
   font-weight: 900;
   font-size: 12px;
   line-height: 16px;
 }
-/* line 87, ../sass/_home.scss */
+/* line 105, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-1 {
   float: left;
   width: 16.66667%;
   margin-left: 0%;
   margin-right: -16.66667%;
 }
-/* line 89, ../sass/_home.scss */
+/* line 107, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-1 > div {
   background-color: #b677b3;
 }
-/* line 92, ../sass/_home.scss */
+/* line 110, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-1 .bottom-w {
   background-color: #8e5e8a;
 }
-/* line 96, ../sass/_home.scss */
+/* line 114, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-2 {
   float: left;
   width: 16.66667%;
   margin-left: 16.66667%;
   margin-right: -33.33333%;
 }
-/* line 98, ../sass/_home.scss */
+/* line 116, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-2 > div {
   background-color: #6fc1d2;
 }
-/* line 101, ../sass/_home.scss */
+/* line 119, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-2 .bottom-w {
   background-color: #428e9e;
 }
-/* line 105, ../sass/_home.scss */
+/* line 123, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-3 {
   float: left;
   width: 16.66667%;
   margin-left: 33.33333%;
   margin-right: -50%;
 }
-/* line 107, ../sass/_home.scss */
+/* line 125, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-3 > div {
   background-color: #dfbc42;
 }
-/* line 110, ../sass/_home.scss */
+/* line 128, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-3 .bottom-w {
   background-color: #a39033;
 }
-/* line 114, ../sass/_home.scss */
+/* line 132, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-4 {
   float: left;
   width: 16.66667%;
   margin-left: 50%;
   margin-right: -66.66667%;
 }
-/* line 116, ../sass/_home.scss */
+/* line 134, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-4 > div {
   background-color: #7dc692;
 }
-/* line 119, ../sass/_home.scss */
+/* line 137, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-4 .bottom-w {
   background-color: #508b61;
 }
-/* line 123, ../sass/_home.scss */
+/* line 141, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-5 {
   float: left;
   width: 16.66667%;
   margin-left: 66.66667%;
   margin-right: -83.33333%;
 }
-/* line 125, ../sass/_home.scss */
+/* line 143, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-5 > div {
   background-color: #e65d5d;
 }
-/* line 128, ../sass/_home.scss */
+/* line 146, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-5 .bottom-w {
   background-color: #c43433;
 }
-/* line 132, ../sass/_home.scss */
+/* line 150, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-6 {
   float: left;
   width: 16.66667%;
   margin-left: 83.33333%;
   margin-right: -100%;
 }
-/* line 134, ../sass/_home.scss */
+/* line 152, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-6 > div {
   background-color: #d98e64;
 }
-/* line 137, ../sass/_home.scss */
+/* line 155, ../sass/_home.scss */
 body.front #lqda-buttons-region .lqda-front-button-6 .bottom-w {
   background-color: #b26b56;
 }
-/* line 144, ../sass/_home.scss */
+/* line 162, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block {
   clear: left;
   float: left;
@@ -1939,7 +1971,7 @@ body.front #block-views-home-libreqda-block {
   margin-right: -50%;
   padding-right: 30px;
 }
-/* line 149, ../sass/_home.scss */
+/* line 167, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .views-field-title {
   float: left;
   width: 33.33333%;
@@ -1947,14 +1979,14 @@ body.front #block-views-home-libreqda-block .view-content .views-field-title {
   margin-right: -33.33333%;
   font-weight: 700;
 }
-/* line 153, ../sass/_home.scss */
+/* line 171, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .blog-post-body {
   float: left;
   width: 66.66667%;
   margin-left: 33.33333%;
   margin-right: -100%;
 }
-/* line 156, ../sass/_home.scss */
+/* line 174, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .footer-wrapper {
   clear: left;
   float: left;
@@ -1964,14 +1996,14 @@ body.front #block-views-home-libreqda-block .view-content .footer-wrapper {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 160, ../sass/_home.scss */
+/* line 178, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-created {
   float: left;
   width: 33.33333%;
   margin-left: 0%;
   margin-right: -33.33333%;
 }
-/* line 163, ../sass/_home.scss */
+/* line 181, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-content .footer-wrapper .footer-link {
   float: left;
   width: 66.66667%;
@@ -1979,7 +2011,7 @@ body.front #block-views-home-libreqda-block .view-content .footer-wrapper .foote
   margin-right: -100%;
   text-align: right;
 }
-/* line 169, ../sass/_home.scss */
+/* line 187, ../sass/_home.scss */
 body.front #block-views-home-libreqda-block .view-footer {
   clear: left;
   float: left;
@@ -1988,14 +2020,14 @@ body.front #block-views-home-libreqda-block .view-footer {
   margin-right: -50%;
   text-align: center;
 }
-/* line 175, ../sass/_home.scss */
+/* line 193, ../sass/_home.scss */
 body.front #block-views-libreqda-forums-block {
   float: left;
   width: 50%;
   margin-left: 50%;
   margin-right: -100%;
 }
-/* line 180, ../sass/_home.scss */
+/* line 198, ../sass/_home.scss */
 body.front #content .feed-icon,
 body.front #content article.node {
   display: none;

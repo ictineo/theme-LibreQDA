@@ -151,3 +151,4 @@
 </div>
 
 <?php print render($page['bottom']); ?>
+<?php drupal_add_js(drupal_get_path('theme', 'lqda') . '/js/home.js'); ?>
