@@ -47,6 +47,9 @@ function lqda_form_system_theme_settings_alter(&$form, &$form_state, $form_id = 
       '#type' => 'managed_file',
       '#title' => 'Image text for home block ' . $i,
       '#default_value' => theme_get_setting('home_block_lqda_img_' . $i),
+      '#upload_validators' => array(
+        'file_validate_extensions' => array('gif png jpg jpeg svg'),
+      ),
     );
   }
 }

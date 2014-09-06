@@ -74,7 +74,7 @@
           $title = theme_get_setting('home_block_lqda_title_' . $i);
           $desc  = theme_get_setting('home_block_lqda_desc_' . $i);
           $link  = theme_get_setting('home_block_lqda_link_' . $i);
-          $img   = theme_get_setting('home_block_lqda_img_' . $i);
+          $img   = file_create_url(file_load(theme_get_setting('home_block_lqda_img_' . $i))->uri);
           $set_button = $title && $desc && $link && $img;
           if ($set_button):
             $buttons_region .= '<a href="' . $link . '" class="lqda-front-button lqda-front-button-' . $i . '">';
