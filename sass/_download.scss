@@ -1,0 +1,312 @@
+body.page-lista.page-lista-descargar {
+  #main {
+    padding-top: 0px;
+    #content {
+      h1#page-title {
+        background-image: url('../images/desc.svg');
+        background-repeat: no-repeat;
+        background-color: $amarillo;
+        background-position: 50%;
+        text-indent: -9999999999px;
+        height: 300px;
+        display: block;
+        width: 100%;
+        margin: 0px;
+      }
+      .view-id-download.view-display-id-page {
+        .view-header {
+          @include zen-grid-item(6,1);
+          background-color: $gris_fondo;
+          #regular-header-wrapper {
+            background-color: $gris_fondo;
+            padding: 30px 50px;
+            &,
+            div,
+            p {
+              font-size: 14px;
+              font-weight: 400;
+            }
+            .lqdaDownload {
+              font-weight: 600;
+            }
+            .lqdaIntroLeft {
+              background-color: $gris_fondo;
+              @include zen-grid-item(3,1);
+              padding-right: 15px;
+              .lqdaBeta {
+                color: $rojo;
+              }
+              .lqdaEstable {
+                color: $verde;
+              }
+            }
+            .lqdaIntroRight {
+              background-color: $gris_fondo;
+              @include zen-grid-item(3,4);
+              padding-left: 15px;
+              p {
+                margin: 0px;
+              }
+              div {
+                margin-top: 16px;
+              }
+              .lqdaDesktop {
+                padding-left: 30px;
+                line-height: 20px;
+                background-image: url('../images/desktop_edition.png');
+                background-repeat: no-repeat;
+                background-position: 0 50%;
+                background-size: auto 20px;
+              }
+              .lqdaServer {
+                padding-left: 30px;
+                line-height: 20px;
+                background-image: url('../images/server_edition.png');
+                background-repeat: no-repeat;
+                background-position: 0 50%;
+                background-size: auto 20px;
+              }
+            }
+          }
+        }
+        .view-content {
+          @include zen-clear();
+          h3 {
+            display: none;
+          }
+          .views-row:nth-of-type(1) {
+            @include zen-grid-item(3,1);
+            background-color: rgba(125, 198, 146, 0.4);
+          }
+          .views-row:nth-of-type(2) {
+            @include zen-grid-item(3,4);
+            background-color: rgba(125, 198, 146, 0.4);
+          }
+          .views-row:nth-of-type(3) {
+            @include zen-clear();
+            @include zen-grid-item(3,1);
+            background-color: $gris_fondo;
+          }
+          .views-row:nth-of-type(4) {
+            @include zen-grid-item(3,4);
+            background-color: $gris_fondo;
+          }
+          .views-row {
+            @include zen-grid-container();
+            & > div {
+              //padding: 0 25px 0 25px;
+            }
+            & > div:first-child {
+              padding-top: 25px;
+            }
+            & > div:last-child {
+              padding-bottom: 25px;
+            }
+            & > .main {
+              @include zen-grid-item(4,3);
+              font-size: 16px;
+              line-height: 20px;
+              .lqdaTitle {
+                color: $verde;
+                font-size: 24px;
+                line-height: 28px;
+                font-weight: 600;
+                margin-top: 100px;
+                margin-bottom: 16px;
+              }
+              .btn-wrapper {
+                margin-top: 24px;
+                margin-bottom: 32px;
+                .lqdaButton {
+                  @include menu_botones;
+                  padding: 0px 18px;
+                  margin-right: 14px;
+                  display: inline-block;
+                  min-width: 100px;
+                  text-align: center;
+                  border-radius: 4px;
+                  font-size: 10px;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: white;
+                  line-height: 30px;
+                  &.descargar {
+                    background-color: $verde;
+                    border-bottom: 2px solid $verde_os;
+                  }
+                  &.source {
+                    background-color: $negro;
+                    border-bottom: 2px solid $gris_aux1;
+                  }
+                }
+              }
+            }
+            & > .left-wrapper {
+              @include zen-grid-item(2,1);
+              .left {
+                width: 75%;
+                margin: 0 auto;
+                & > span {
+                  display: block;
+                  width: 100%;
+                  height: 165px;
+                  background-repeat: no-repeat;
+                  background-position: 50%;
+                  &.Estable.Server {
+                    background-image: url('../images/estable_server_gran.png');
+                    background-size: 45% auto;
+                  }
+                  &.Estable.Desktop {
+                    background-image: url('../images/estable_desktop_gran.png');
+                    background-size: 100% auto;
+                  }
+                  &.Beta.Desktop {
+                    background-image: url('../images/estable_desktop_gran_beta.png');
+                    background-size: 100% auto;
+                  }
+                  &.Beta.Server {
+                    background-image: url('../images/estable_server_gran_beta.png');
+                    background-size: 45% auto;
+                  }
+                }
+                .bubble {
+                  &:before {
+                    display: block;
+                    width: 45px;
+                    height: 15px;
+                    content: ' ';
+                    background-repeat: no-repeat;
+                    background-position: 50% 100%;
+                    background-image: url('../images/fletxa.png');
+                    background-color: transparent;
+                    background-size: auto 15px;
+                    float: left;
+                    position: relative;
+                    left: 35%;
+                    bottom: 15px;
+                  }
+                  margin-top: 20px;
+                  margin-bottom: 20px;
+                  padding-bottom: 15px;
+                  background-color: white;
+                  font-size: 12px;
+                  line-height: 16px;
+                  & > span,
+                  & > div {
+                    padding: 0 15px;
+                  }
+                  .estabilidad {
+                    padding-top: 15px;
+                    text-transform: uppercase;
+                    &.Estable {
+                      color: $verde;
+                    }
+                    &.Beta {
+                      color: $rojo;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .attachment-after {
+          @include zen-clear();
+          .view-header h3 {
+            text-align: center;
+            letter-spacing: 1px;
+          }
+          .view-content {
+            .views-row {
+              background-color: white;
+              @include zen-grid-item(4,2);
+              @include zen-clear();
+              margin-bottom: 16px;
+              padding-left: 16px;
+              border-bottom: 1px solid $negro;
+              .col1 {
+                @include zen-grid-item(3,1);
+                padding-top: 0px;
+                .tit-wrapper {
+                  padding-left: 20px;
+                  line-height: 20px;
+                  background-repeat: no-repeat;
+                  background-position: 0 50%;
+                  background-size: auto 20px;
+                  .lqdaTitle {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 18px;
+                  }
+                }
+                font-size: 12px;
+                line-height: 16px;
+                .tit-wrapper.Beta {
+                  color: $rojo;
+                }
+                .tit-wrapper.Estable {
+                  color: $verde;
+                }
+                .tit-wrapper.Server {
+                  background-image: url('../images/desktop_edition.png');
+                }
+                .tit-wrapper.Desktop {
+                  background-image: url('../images/server_edition.png');
+                }
+
+              }
+              .col2 {
+                @include zen-grid-item(1,4);
+                padding-top: 20px;
+                padding-left: 20px;
+                line-height: 16px;
+                .estab-wrapper {
+                  text-transform: uppercase;
+                }
+                .estab-wrapper.Beta {
+                  color: $rojo;
+                }
+                .estab-wrapper.Estable {
+                  color: $verde;
+                }
+              }
+              .col3 {
+                @include zen-grid-item(1,5);
+                .lqdaButton {
+                  @include menu_botones;
+                  padding: 0px 22px;
+                  margin-top: 14px;
+                  display: inline-block;
+                  min-width: 100px;
+                  text-align: center;
+                  border-radius: 4px;
+                  font-size: 10px;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: white;
+                  line-height: 30px;
+                  &.descargar {
+                    background-color: $verde;
+                    border-bottom: 2px solid $verde_os;
+                  }
+                  &.source {
+                    background-color: $negro;
+                    border-bottom: 2px solid $gris_aux1;
+                  }
+                }
+              }
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+            &:after {
+              clear: both;
+            }
+          }
+        }
+      }
+    }
+  }
+}

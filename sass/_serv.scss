@@ -1,0 +1,46 @@
+body.page-node-7 {
+  #main {
+    padding-top: 0px;
+    #content {
+      h1#page-title {
+        background-image: url('../images/flot.svg');
+        background-repeat: no-repeat;
+        background-color: $naranja;
+        background-position: 50%;
+        text-indent: -9999999999px;
+        height: 300px;
+        display: block;
+        width: 100%;
+        margin: 0px;
+      }
+      article {
+        .field-name-body {
+          .lqdaServicio {
+            @include zen-grid-item(4,2);
+            @include zen-clear();
+            margin-top: 18px;
+            img.lqdaLeft {
+              float: left;
+              padding-right: 12px;
+              padding-bottom: 6px;
+            }
+            img.lqdaRight {
+              float: right;
+              padding-left: 12px;
+              padding-bottom: 6px;
+            }
+            h2 {
+              font-size: 32px;
+              line-height: 36px;
+            }
+            p {
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ 
