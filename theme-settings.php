@@ -11,6 +11,10 @@
  *   A keyed array containing the current state of the form.
  */
 function lqda_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL) {
+  $theme_settings_path = drupal_get_path('theme', 'lqda') . '/theme-settings.php';
+  if (file_exists($theme_settings_path) && !in_array($theme_settings_path, $form_state['build_info']['files'])) {
+    $form_state['build_info']['files'][] = $theme_settings_path;
+  }
   // Work-around for a core bug affecting admin themes. See issue #943212.
   if (isset($form_id)) {
     return;
@@ -59,5 +63,23 @@ function lqda_form_system_theme_settings_alter(&$form, &$form_state, $form_id = 
         'file_validate_extensions' => array('gif png jpg jpeg svg'),
       ),
     );
+  }
+  $form['#submit'] = array('lqda_system_theme_settings_submit');
+}
+
+function lqda_system_theme_settings_submit (&$form, &$form_state) {
+  for ($i = 1; $i <= 6; $i++) {
+    if( file_load($form_state['values']['home_block_lqda_img_' . $i]) != 0 ) {
+      $file = file_load($form_state['values']['home_block_lqda_img_' . $i]);
+      $file->status = FILE_STATUS_PERMANENT;
+      file_save($file);
+      file_usage_add($file, 'lqda_theme', 'layout', $i);  
+    }
+  }
+  if( file_load($form_state['values']['lqda_home_pc_img']) != 0 ) {
+    $file = file_load($form_state['values']['lqda_home_pc_img']);
+    $file->status = FILE_STATUS_PERMANENT;
+    file_save($file);
+    file_usage_add($file, 'lqda_theme', 'layout', '8');  
   }
 }
