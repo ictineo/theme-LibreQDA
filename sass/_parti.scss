@@ -14,6 +14,36 @@ body.page-node-9 {
         margin: 0px;
       }
       article {
+        background-color: $gris_fondo;
+        .field-name-body {
+          .field-item {
+            @include zen-grid-container();
+            text-align: center;
+            h3,
+            h2 {
+              font-size: 28px;
+              line-height: 32px;
+              color: $rojo;
+            }
+            h3 {
+              color: $verde;
+              @include zen-clear();
+              @include zen-grid-item(4,2);
+            }
+            .col1 {
+              @include zen-grid-item(2,2);
+              padding-right: 12px;
+            }
+            .col2 {
+              @include zen-grid-item(2,4);
+              padding-left: 12px;
+            }
+            .num-cuent {
+              color: $rojo;
+              font-weight: 600;
+            }
+          }
+        }
       }
     }
   }
