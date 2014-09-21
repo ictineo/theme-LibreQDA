@@ -71,14 +71,12 @@ a {
           @include menu_botones();
           color: white;
         }
-        a.active {
-          &:nth-child(1) {color: $morado;}
-          &:nth-child(2) {color: $amarillo;}
-          &:nth-child(3) {color: $morado;}
-          &:nth-child(4) {color: $naranja;}
-          &:nth-child(5) {color: $verde;}
-          &:nth-child(6) {color: $azul;}
-        }
+        &:nth-child(1) > a.active-trail {color: $amarillo;}
+        &:nth-child(2) > a.active-trail {color: $morado;}
+        &:nth-child(3) > a.active-trail {color: $morado;}
+        &:nth-child(4) > a.active-trail {color: $naranja;}
+        &:nth-child(5) > a.active-trail {color: $verde;}
+        &:nth-child(6) > a.active-trail {color: $azul;}
         /* Sub menu segon nivell */
         ul {
           top: $header_h;
