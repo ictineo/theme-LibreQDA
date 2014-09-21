@@ -1,0 +1,99 @@
+body.page-forum {
+  #main {
+    background-color: $gris_fondo;
+    padding-left: 28px;
+    padding-right: 28px;
+    #content {
+      table.forum-table {
+        border: 0px none;
+        tr,
+        td {
+          background-image: none;
+          background-color: transparent;
+          border: 0px none;
+        }
+        thead {
+          th a {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+            font-weight: 600;
+          }
+          th.views-field-comment-count {
+            text-align: center;
+            vertical-align: middle;
+            a {
+              width: 26px;
+              height: 16px;
+              display: inline-block;
+              line-height: 24px;
+              text-indent: 99999999px;
+              overflow: hidden;
+              background-position: 0 0;
+              background-size: 26px auto;
+              background-repeat: no-repeat;
+              background-image: url('../images/forum_comcount.png');
+            }
+          }
+          th.views-field-totalcount {
+            text-align: center;
+            vertical-align: middle;
+            a {
+              width: 26px;
+              height: 16px;
+              display: inline-block;
+              line-height: 24px;
+              text-indent: 99999999px;
+              overflow: hidden;
+              background-position: 0 0;
+              background-size: 26px auto;
+              background-repeat: no-repeat;
+              background-image: url('../images/forum_viewcount.png');
+            }
+          }
+        }
+        tbody {
+          border-bottom: 1px solid $negro;
+          * {
+            font-weight: 600;
+            vertical-align: top;
+          }
+          td {
+            padding-top: 12px;
+          }
+          tr {
+            border-top: 1px solid $negro;
+            td.views-field-topic-icon {
+              width: 30px;
+              span.topic-icon {
+                background-image: url('../images/forum_post.png');
+                background-size: 24px 24px;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                width: 24px;
+                height: 24px;
+              }
+            }
+            td.views-field-title {
+              padding: 8px;
+              @include background-image(linear-gradient( 180deg, $gris_osc_fondo 95% , transparent 5%));
+              a {
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 600;
+              }
+            }
+            td.views-field-comment-count,
+            td.views-field-totalcount {
+              font-size: 16px;
+            }
+            .username {
+              color: $verde;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}

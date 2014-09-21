@@ -1,0 +1,21 @@
+body.node-type-forum {
+  #main {
+    #content {
+      h1#page-title {
+        @include zen-grid-item(4,1);
+        background-color: $verde;
+        color: white;
+      }
+      #forum-topic-header {
+        @include zen-clear();
+      }
+      .forum-post-panel-sub,
+      .forum-post-info {
+        @include zen-grid-item(2, 5);
+      }
+      .forum-post-panel-main {
+        @include zen-grid-item(4, 1);
+      }
+    }
+  }
+}
