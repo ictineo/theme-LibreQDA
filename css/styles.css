@@ -2836,6 +2836,64 @@ body.page-node-5 #main #content article .patr .lqdaPatrocinadores:nth-child(2n) 
   margin-right: -100%;
 }
 
+/* line 2, ../sass/_faq.scss */
+body.page-faq-page #content {
+  background-color: #f9f9f9;
+  padding: 50px 0px;
+  margin-top: -10px;
+}
+/* line 6, ../sass/_faq.scss */
+body.page-faq-page #content #page-title {
+  padding: 0 80px;
+}
+/* line 10, ../sass/_faq.scss */
+body.page-faq-page #content .faq .faq-description {
+  padding: 0 80px;
+}
+/* line 13, ../sass/_faq.scss */
+body.page-faq-page #content .faq .faq-question-answer {
+  clear: left;
+  padding: 0 80px;
+}
+/* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+body.page-faq-page #content .faq .faq-question-answer:before, body.page-faq-page #content .faq .faq-question-answer:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+body.page-faq-page #content .faq .faq-question-answer:after {
+  clear: both;
+}
+/* line 17, ../sass/_faq.scss */
+body.page-faq-page #content .faq .faq-question-answer .faq-question {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 0px;
+}
+/* line 20, ../sass/_faq.scss */
+body.page-faq-page #content .faq .faq-question-answer .faq-question a {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+/* line 26, ../sass/_faq.scss */
+body.page-faq-page #content .faq .faq-question-answer .faq-answer {
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+}
+/* line 29, ../sass/_faq.scss */
+body.page-faq-page #content .faq .faq-question-answer.expanded {
+  background-color: white;
+}
+/* line 31, ../sass/_faq.scss */
+body.page-faq-page #content .faq .faq-question-answer.expanded .faq-question a {
+  color: #b677b3;
+}
+
 /**
  * Custom styles for LibreQDA theme
  * Designed by Abel martin

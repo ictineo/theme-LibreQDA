@@ -1,0 +1,38 @@
+body.page-faq-page {
+  #content {
+    background-color: $gris_fondo;
+    padding: 50px 0px;
+    margin-top: -10px;
+    #page-title {
+      padding: 0 80px;
+    }
+    .faq {
+      .faq-description {
+        padding: 0 80px;
+      }
+      .faq-question-answer {
+        @include zen-clear();
+        @include zen-grid-container();
+        padding: 0 80px;
+        .faq-question {
+          @include zen-grid-item(3,1);
+          padding-left: 0px;
+          a {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+          }
+        }
+        .faq-answer {
+          @include zen-grid-item(3,4);
+        }
+        &.expanded {
+          background-color: white;
+          .faq-question a {
+            color: $morado;
+          }
+        }
+      }
+    }
+  }
+}
