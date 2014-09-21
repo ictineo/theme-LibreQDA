@@ -2894,6 +2894,94 @@ body.page-faq-page #content .faq .faq-question-answer.expanded .faq-question a {
   color: #b677b3;
 }
 
+/* line 1, ../sass/_blognode.scss */
+body.node-type-article {
+  background-color: #f9f9f9;
+}
+/* line 3, ../sass/_blognode.scss */
+body.node-type-article #main {
+  background-color: white;
+}
+/* line 5, ../sass/_blognode.scss */
+body.node-type-article #main #content {
+  padding-right: 0px;
+}
+/* line 7, ../sass/_blognode.scss */
+body.node-type-article #main #content > h1#page-title {
+  display: none;
+}
+/* line 11, ../sass/_blognode.scss */
+body.node-type-article #main #content article header h1#page-title {
+  font-size: 28px;
+  line-height: 32px;
+}
+/* line 15, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-left {
+  float: left;
+  width: 83.33333%;
+  margin-left: 0%;
+  margin-right: -83.33333%;
+}
+/* line 17, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-left > * {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+/* line 22, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-right {
+  float: left;
+  width: 16.66667%;
+  margin-left: 83.33333%;
+  margin-right: -100%;
+}
+/* line 25, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-right .field-name-field-tags .field-label,
+body.node-type-article #main #content article .col-right h4 {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 12px;
+  border-bottom: 1px solid #1b1f25;
+}
+/* line 34, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-right .submitted > * {
+  display: block;
+  text-align: center;
+}
+/* line 38, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-right .submitted h4 {
+  text-align: left;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+/* line 43, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-right .submitted .username {
+  color: #7dc692;
+}
+/* line 47, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-right .field-name-field-tags .field-items * {
+  display: inline;
+}
+/* line 50, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-right .field-name-field-tags .field-items {
+  padding: 12px;
+}
+/* line 52, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-right .field-name-field-tags .field-items a:after {
+  content: ', ';
+  display: inline;
+}
+/* line 56, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-right .field-name-field-tags .field-items .field-item:last-child a:after {
+  content: '';
+}
+/* line 60, ../sass/_blognode.scss */
+body.node-type-article #main #content article .col-right .print-link {
+  padding-left: 12px;
+  text-align: left;
+}
+
 /**
  * Custom styles for LibreQDA theme
  * Designed by Abel martin
