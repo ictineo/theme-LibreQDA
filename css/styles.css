@@ -640,7 +640,7 @@ table {
   /* line 60, ../sass/layouts/_responsive.scss */
   #main {
     /* Move all the children of #main down to make room. */
-    padding-top: 3em;
+    padding-top: 60px;
     position: relative;
   }
 
@@ -2667,6 +2667,175 @@ body.page-node-9 #main #content h1#page-title {
   margin: 0px;
 }
 
+/* line 2, ../sass/_proj.scss */
+body.page-node-5 #main {
+  padding-top: 0px;
+}
+/* line 5, ../sass/_proj.scss */
+body.page-node-5 #main #content h1#page-title {
+  background-image: url("../images/proje.png");
+  background-repeat: no-repeat;
+  background-color: #b677b3;
+  background-position: 50%;
+  background-size: auto 150px;
+  text-indent: -9999999999px;
+  height: 300px;
+  display: block;
+  width: 100%;
+  margin: 0px;
+}
+/* line 17, ../sass/_proj.scss */
+body.page-node-5 #main #content article {
+  background-color: #f9f9f9;
+  padding: 20px 80px 50px 80px;
+  margin-top: -22px;
+}
+/* line 21, ../sass/_proj.scss */
+body.page-node-5 #main #content article h1 {
+  clear: left;
+  font-size: 28px;
+  padding-left: 60px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 50px 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  margin-top: 30px;
+  background-image: url("../images/proje1.png");
+}
+/* line 32, ../sass/_proj.scss */
+body.page-node-5 #main #content article h1.tit-lice {
+  background-image: url("../images/proje2.png");
+}
+/* line 35, ../sass/_proj.scss */
+body.page-node-5 #main #content article h1.tit-patr {
+  background-image: url("../images/proje3.png");
+}
+/* line 39, ../sass/_proj.scss */
+body.page-node-5 #main #content article h2 {
+  text-align: center;
+  font-size: 15px;
+}
+/* line 44, ../sass/_proj.scss */
+body.page-node-5 #main #content article .equipo > * {
+  text-align: center;
+}
+/* line 47, ../sass/_proj.scss */
+body.page-node-5 #main #content article .equipo h2 {
+  clear: left;
+}
+/* line 52, ../sass/_proj.scss */
+body.page-node-5 #main #content article .equipo .lqdaPersona .lqdanombre a,
+body.page-node-5 #main #content article .equipo .lqdaPersona .lqdanombre {
+  color: #b677b3;
+  text-align: left;
+  font-size: 18px;
+  line-height: 22px;
+}
+/* line 58, ../sass/_proj.scss */
+body.page-node-5 #main #content article .equipo .lqdaPersona .lqdanombre {
+  margin: 15px;
+}
+/* line 61, ../sass/_proj.scss */
+body.page-node-5 #main #content article .equipo .lqdaPersona .lqdaInstitucion {
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 15px;
+}
+/* line 68, ../sass/_proj.scss */
+body.page-node-5 #main #content article .equipo .lqdaPersonaCol1 {
+  clear: left;
+  float: left;
+  width: 16.66667%;
+  margin-left: 16.66667%;
+  margin-right: -33.33333%;
+}
+/* line 72, ../sass/_proj.scss */
+body.page-node-5 #main #content article .equipo .lqdaPersonaCol2 {
+  float: left;
+  width: 16.66667%;
+  margin-left: 33.33333%;
+  margin-right: -50%;
+}
+/* line 75, ../sass/_proj.scss */
+body.page-node-5 #main #content article .equipo .lqdaPersonaCol3 {
+  float: left;
+  width: 16.66667%;
+  margin-left: 50%;
+  margin-right: -66.66667%;
+}
+/* line 78, ../sass/_proj.scss */
+body.page-node-5 #main #content article .equipo .lqdaPersonaCol4 {
+  float: left;
+  width: 16.66667%;
+  margin-left: 66.66667%;
+  margin-right: -83.33333%;
+}
+/* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+body.page-node-5 #main #content article .lice:before, body.page-node-5 #main #content article .lice:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+body.page-node-5 #main #content article .lice:after {
+  clear: both;
+}
+/* line 84, ../sass/_proj.scss */
+body.page-node-5 #main #content article .lice .lice-img {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+}
+/* line 86, ../sass/_proj.scss */
+body.page-node-5 #main #content article .lice .lice-img img {
+  width: 80%;
+}
+/* line 90, ../sass/_proj.scss */
+body.page-node-5 #main #content article .lice .lice-txt {
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+}
+/* line 95, ../sass/_proj.scss */
+body.page-node-5 #main #content article .patr .lqdaPatrocinadores:nth-child(2n + 1) {
+  clear: left;
+}
+/* line 97, ../sass/_proj.scss */
+body.page-node-5 #main #content article .patr .lqdaPatrocinadores:nth-child(2n + 1) .lqdaLeft {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+}
+/* line 99, ../sass/_proj.scss */
+body.page-node-5 #main #content article .patr .lqdaPatrocinadores:nth-child(2n + 1) .lqdaLeft img {
+  width: 80%;
+}
+/* line 103, ../sass/_proj.scss */
+body.page-node-5 #main #content article .patr .lqdaPatrocinadores:nth-child(2n + 1) .lqdaPatrocinador {
+  float: left;
+  width: 16.66667%;
+  margin-left: 33.33333%;
+  margin-right: -50%;
+}
+/* line 108, ../sass/_proj.scss */
+body.page-node-5 #main #content article .patr .lqdaPatrocinadores:nth-child(2n) .lqdaLeft {
+  float: left;
+  width: 33.33333%;
+  margin-left: 50%;
+  margin-right: -83.33333%;
+}
+/* line 111, ../sass/_proj.scss */
+body.page-node-5 #main #content article .patr .lqdaPatrocinadores:nth-child(2n) .lqdaPatrocinador {
+  float: left;
+  width: 16.66667%;
+  margin-left: 83.33333%;
+  margin-right: -100%;
+}
+
 /**
  * Custom styles for LibreQDA theme
  * Designed by Abel martin
@@ -2744,6 +2913,7 @@ a {
 #header .region-header #block-system-main-menu ul li {
   display: inline;
   margin: 0px 4px;
+  /* Sub menu segon nivell */
 }
 /* line 68, ../sass/_lqda.scss */
 #header .region-header #block-system-main-menu ul li a {
@@ -2755,11 +2925,51 @@ a {
   font-size: 0.9em;
   color: white;
 }
+/* line 75, ../sass/_lqda.scss */
+#header .region-header #block-system-main-menu ul li a.active:nth-child(1) {
+  color: #b677b3;
+}
+/* line 76, ../sass/_lqda.scss */
+#header .region-header #block-system-main-menu ul li a.active:nth-child(2) {
+  color: #dfbc42;
+}
+/* line 77, ../sass/_lqda.scss */
+#header .region-header #block-system-main-menu ul li a.active:nth-child(3) {
+  color: #b677b3;
+}
 /* line 78, ../sass/_lqda.scss */
+#header .region-header #block-system-main-menu ul li a.active:nth-child(4) {
+  color: #d98e64;
+}
+/* line 79, ../sass/_lqda.scss */
+#header .region-header #block-system-main-menu ul li a.active:nth-child(5) {
+  color: #7dc692;
+}
+/* line 80, ../sass/_lqda.scss */
+#header .region-header #block-system-main-menu ul li a.active:nth-child(6) {
+  color: #6fc1d2;
+}
+/* line 83, ../sass/_lqda.scss */
+#header .region-header #block-system-main-menu ul li ul {
+  top: 28px;
+  right: 0px;
+  left: 0px;
+  background-color: #e8e8e8;
+  height: 28px;
+  z-index: 9;
+  position: fixed;
+  padding-left: 100px;
+  margin: 0px;
+}
+/* line 93, ../sass/_lqda.scss */
+#header .region-header #block-system-main-menu ul li ul li a {
+  color: #1b1f25;
+}
+/* line 101, ../sass/_lqda.scss */
 #header .region-header #block-locale-language h2 {
   display: none;
 }
-/* line 79, ../sass/_lqda.scss */
+/* line 102, ../sass/_lqda.scss */
 #header .region-header #block-locale-language ul {
   position: fixed;
   right: 0;
@@ -2769,7 +2979,7 @@ a {
   padding: 8px;
   background-color: #1b1f25;
 }
-/* line 80, ../sass/_lqda.scss */
+/* line 103, ../sass/_lqda.scss */
 #header .region-header #block-locale-language ul:before {
   display: block;
   position: fixed;
@@ -2781,11 +2991,11 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
-/* line 98, ../sass/_lqda.scss */
+/* line 121, ../sass/_lqda.scss */
 #header .region-header #block-locale-language ul li {
   list-style: none;
 }
-/* line 100, ../sass/_lqda.scss */
+/* line 123, ../sass/_lqda.scss */
 #header .region-header #block-locale-language ul li a {
   color: white;
 }

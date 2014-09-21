@@ -1,0 +1,119 @@
+body.page-node-5 {
+  #main {
+    padding-top: 0px;
+    #content {
+      h1#page-title {
+        background-image: url('../images/proje.png');
+        background-repeat: no-repeat;
+        background-color: $morado;
+        background-position: 50%;
+        background-size: auto 150px;
+        text-indent: -9999999999px;
+        height: 300px;
+        display: block;
+        width: 100%;
+        margin: 0px;
+      }
+      article {
+        background-color: $gris_fondo;
+        padding: 20px 80px 50px 80px;
+        margin-top: -22px;
+        h1 {
+          @include zen-clear();
+          font-size: 28px;
+          padding-left: 60px;
+          background-repeat: no-repeat;
+          background-position: 0 50%;
+          background-size: 50px 50px;
+          line-height: 50px;
+          vertical-align: middle;
+          margin-top: 30px;
+          background-image: url('../images/proje1.png');
+          &.tit-lice {
+            background-image: url('../images/proje2.png');
+          }
+          &.tit-patr {
+            background-image: url('../images/proje3.png');
+          }
+        }
+        h2 {
+          text-align: center;
+          font-size: 15px;
+        }
+        .equipo {
+          & > * {
+            text-align: center;
+          }
+          h2{
+            @include zen-clear();
+          }
+          .lqdaPersona {
+            .lqdanombre a,
+            .lqdanombre {
+              color: $morado;
+              text-align: left;
+              font-size: 18px;
+              line-height: 22px;
+            }
+            .lqdanombre {
+              margin: 15px;
+            }
+            .lqdaInstitucion {
+              text-align: left;
+              font-size: 16px;
+              line-height: 20px;
+              margin: 0 15px;
+            }
+          }
+          .lqdaPersonaCol1 {
+            @include zen-clear();
+            @include zen-grid-item(1,2);
+          }
+          .lqdaPersonaCol2 {
+            @include zen-grid-item(1,3);
+          }
+          .lqdaPersonaCol3 {
+            @include zen-grid-item(1,4);
+          }
+          .lqdaPersonaCol4 {
+            @include zen-grid-item(1,5);
+          }
+        }
+        .lice {
+          @include zen-grid-container();
+          .lice-img {
+            @include zen-grid-item(3,1);
+            img {
+              width: 80%;
+            }
+          }
+          .lice-txt {
+            @include zen-grid-item(3,4);
+          }
+        }
+        .patr {
+          .lqdaPatrocinadores:nth-child(2n + 1) {
+            @include zen-clear();
+            .lqdaLeft {
+              @include zen-grid-item(2,1);
+              img {
+                width: 80%;
+              }
+            }
+            .lqdaPatrocinador {
+              @include zen-grid-item(1,3);
+            }
+          }
+          .lqdaPatrocinadores:nth-child(2n) {
+            .lqdaLeft {
+              @include zen-grid-item(2,4);
+            }
+            .lqdaPatrocinador {
+              @include zen-grid-item(1,6);
+            }
+          }
+        }
+      }
+    }
+  }
+}
